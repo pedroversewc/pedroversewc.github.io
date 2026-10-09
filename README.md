@@ -4,13 +4,14 @@ Static prototype for the Pedroverse company website.
 
 ## Files
 
-- `index.html` — page content, styles, theme picker, and interactions
-- `logo.jpg` — emblem used by the page
+- `index.html` — main page, styles, theme picker, and interactions
+- `logo.jpg` — emblem used by the pages
+- `technologies/index.html` — dedicated Pedroverse Technologies page at `/technologies/`
 
 ## Updating the site
 
-Edit `index.html` or replace `logo.jpg` in Codex. After the repository is connected to GitHub Pages, publish changes by pushing the updated files to the configured branch.
+Edit these files and commit the changes to the `main` branch of `pedroversewc/pedroversewc.github.io`. GitHub Pages publishes changes automatically. You can edit files directly on GitHub or keep a local copy and push updates.
 
 ## Deployment
 
-GitHub Pages can publish this folder as a static site. The custom domain `pedroverse.co` can be connected once domain ownership and DNS access are in place.
+The free site is hosted at `https://pedroversewc.github.io/`. The custom domain `pedroverse.co` can be connected once the domain is registered and DNS access is available.
