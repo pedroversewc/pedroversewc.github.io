@@ -23,7 +23,7 @@ nav a{text-decoration:none;font-weight:600}
 .hero{position:relative;min-height:88vh;display:grid;place-content:center;padding:5vw;text-align:center;overflow:hidden}
 .hero h1{font-size:clamp(3rem,13vw,11rem);font-weight:800;letter-spacing:-.04em;position:relative;z-index:2}
 .hero p{max-width:34ch;margin:20px auto 0;color:var(--ink2);position:relative;z-index:2}
-.hint{position:absolute;bottom:20px;left:0;right:0;font-weight:600;color:var(--ink2)}
+
 .sh{position:absolute;z-index:1;animation:fl 7s ease-in-out infinite}
 @keyframes fl{50%{transform:translateY(-18px) rotate(var(--r,0deg))}}
 .blade{width:70px;height:150px;background:var(--gold);border-radius:0 100% 0 100%;--r:6deg}
@@ -43,7 +43,7 @@ footer{padding:30px 5vw;display:flex;align-items:center;gap:14px;color:var(--ink
 footer .logo{width:36px;height:36px}
 .sw{position:fixed;left:16px;bottom:16px;z-index:9;display:flex;gap:8px;align-items:center;background:var(--bg);border:2px solid var(--ink);border-radius:99px;padding:6px 12px;font-size:.85rem;font-weight:600}
 .sw button{width:26px;height:26px;border-radius:50%;border:2px solid var(--ink);cursor:pointer}
-@media(max-width:640px){.hint{bottom:72px}nav a:not(.btn){display:none}.sh.hide{display:none}}
+@media(max-width:640px){nav a:not(.btn){display:none}.sh.hide{display:none}}
 @media(prefers-reduced-motion:reduce){.sh{animation:none}html{scroll-behavior:auto}}
 
 .shatter{position:relative;z-index:2;width:min(52vw,240px);aspect-ratio:1;margin:0 auto 18px;mix-blend-mode:multiply}
@@ -67,10 +67,10 @@ footer .logo{width:36px;height:36px}
 <div class="shatter" id="sh" role="img" aria-label="Pedroverse logo"></div>
 <h1>Pedroverse.</h1>
 <p>One universe. Built for what is next.</p>
-<div class="hint">Scroll down</div>
+
 </div>
 <section id="about" class="about"><h2>About</h2>
-<p>Pedroverse is a parent company bringing together technology, entertainment, and finance. Pedroverse Technologies builds websites and apps for businesses, while Pedroverse Studios and Pedroverse Finance are growing divisions within the Pedroverse vision.</p></section>
+<p>Pedroverse is a company built around a simple idea: create useful services and experiences that help people and businesses move forward. Our vision brings together technology, entertainment, and finance—three divisions with distinct paths and room to grow.</p></section>
 <section id="divisions"><h2>Divisions</h2>
 <div class="cards">
 <a class="card card-link" href="technologies/"><span class="dot" style="background:var(--blue)"></span><h3>Pedroverse Technologies</h3><p>Websites and apps designed and built for businesses.</p><span class="tag">Explore Technologies</span></a>
@@ -119,5 +119,6 @@ addEventListener('resize',draw);draw();
 })();
 </script>
 </body></html>
+
 
 
