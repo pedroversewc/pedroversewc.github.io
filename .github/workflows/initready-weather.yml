@@ -1,0 +1,34 @@
+name: Refresh InitReady PH weather
+on:
+  schedule:
+    - cron: '12 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Refresh forecasts without exposing credentials
+        env:
+          WEATHERAPI_KEY: ${{ secrets.WEATHERAPI_KEY }}
+        run: python .github/scripts/initready-weather/export_forecasts.py projects/initready-ph/data
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - name: Deploy weather and company website
+        id: deployment
+        uses: actions/deploy-pages@v4

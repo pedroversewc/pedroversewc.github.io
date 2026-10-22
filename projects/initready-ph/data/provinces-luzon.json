@@ -1,0 +1,312 @@
+{
+  "status": "connected",
+  "source": "WeatherAPI.com",
+  "forecastTime": "2026-10-23T06:00:00Z",
+  "fetchedAt": "2026-10-23T01:00:55.796685+08:00",
+  "provinces": [
+    {
+      "name": "Abra",
+      "reference": "Bangued",
+      "tempC": 27.0,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Bangued"
+    },
+    {
+      "name": "Albay",
+      "reference": "Legazpi",
+      "tempC": 29.6,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Legaspi"
+    },
+    {
+      "name": "Apayao",
+      "reference": "Kabugao",
+      "tempC": 29.4,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Kabugao"
+    },
+    {
+      "name": "Aurora",
+      "reference": "Baler",
+      "tempC": 29.8,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Baler"
+    },
+    {
+      "name": "Bataan",
+      "reference": "Balanga",
+      "tempC": 29.9,
+      "condition": "cloudy",
+      "status": "connected",
+      "resolvedLocation": "Balanga"
+    },
+    {
+      "name": "Batanes",
+      "reference": "Basco",
+      "tempC": 26.3,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Basco"
+    },
+    {
+      "name": "Batangas",
+      "reference": "Batangas City",
+      "tempC": 29.1,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Santa Clara"
+    },
+    {
+      "name": "Benguet",
+      "reference": "La Trinidad",
+      "tempC": 19.2,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "La Trinidad"
+    },
+    {
+      "name": "Bulacan",
+      "reference": "Malolos",
+      "tempC": 30.6,
+      "condition": "cloudy",
+      "status": "connected",
+      "resolvedLocation": "Malolos"
+    },
+    {
+      "name": "Cagayan",
+      "reference": "Tuguegarao",
+      "tempC": 30.1,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Tuguegarao"
+    },
+    {
+      "name": "Camarines Norte",
+      "reference": "Daet",
+      "tempC": 30.5,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Daet"
+    },
+    {
+      "name": "Camarines Sur",
+      "reference": "Pili",
+      "tempC": 28.8,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "San Agustin"
+    },
+    {
+      "name": "Catanduanes",
+      "reference": "Virac",
+      "tempC": 29.3,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Virac"
+    },
+    {
+      "name": "Cavite",
+      "reference": "Trece Martires",
+      "tempC": 29.6,
+      "condition": "cloudy",
+      "status": "connected",
+      "resolvedLocation": "Trece Martires"
+    },
+    {
+      "name": "Ifugao",
+      "reference": "Lagawe",
+      "tempC": 26.6,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Ibulao"
+    },
+    {
+      "name": "Ilocos Norte",
+      "reference": "Laoag",
+      "tempC": 26.8,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Laoag"
+    },
+    {
+      "name": "Ilocos Sur",
+      "reference": "Vigan",
+      "tempC": 27.6,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Vigan"
+    },
+    {
+      "name": "Isabela",
+      "reference": "Ilagan",
+      "tempC": 30.1,
+      "condition": "cloudy",
+      "status": "connected",
+      "resolvedLocation": "Ilagan"
+    },
+    {
+      "name": "Kalinga",
+      "reference": "Tabuk",
+      "tempC": 29.1,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Tabuk"
+    },
+    {
+      "name": "La Union",
+      "reference": "San Fernando",
+      "tempC": 27.6,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Apaleng"
+    },
+    {
+      "name": "Laguna",
+      "reference": "Santa Cruz",
+      "tempC": 30.0,
+      "condition": "cloudy",
+      "status": "connected",
+      "resolvedLocation": "Santa Cruz"
+    },
+    {
+      "name": "Marinduque",
+      "reference": "Boac",
+      "tempC": 29.5,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Boac"
+    },
+    {
+      "name": "Masbate",
+      "reference": "Masbate City",
+      "tempC": 29.5,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Cangbaliguia"
+    },
+    {
+      "name": "Mountain Province",
+      "reference": "Bontoc",
+      "tempC": 22.3,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Bontoc"
+    },
+    {
+      "name": "Nueva Ecija",
+      "reference": "Palayan",
+      "tempC": 27.4,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Palayan"
+    },
+    {
+      "name": "Nueva Vizcaya",
+      "reference": "Bayombong",
+      "tempC": 29.9,
+      "condition": "cloudy",
+      "status": "connected",
+      "resolvedLocation": "Cutug"
+    },
+    {
+      "name": "Occidental Mindoro",
+      "reference": "Mamburao",
+      "tempC": 27.8,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Mamburao"
+    },
+    {
+      "name": "Oriental Mindoro",
+      "reference": "Calapan",
+      "tempC": 29.1,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Salong"
+    },
+    {
+      "name": "Palawan",
+      "reference": "Puerto Princesa",
+      "tempC": 28.9,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Puerto Princesa"
+    },
+    {
+      "name": "Pampanga",
+      "reference": "San Fernando",
+      "tempC": 31.0,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Pulungbulu"
+    },
+    {
+      "name": "Pangasinan",
+      "reference": "Lingayen",
+      "tempC": 28.8,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Lingayen"
+    },
+    {
+      "name": "Quezon",
+      "reference": "Lucena",
+      "tempC": 30.9,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Canlurang Isabang"
+    },
+    {
+      "name": "Quirino",
+      "reference": "Cabarroguis",
+      "tempC": 30.7,
+      "condition": "cloudy",
+      "status": "connected",
+      "resolvedLocation": "Ricarte"
+    },
+    {
+      "name": "Rizal",
+      "reference": "Antipolo",
+      "tempC": 29.5,
+      "condition": "cloudy",
+      "status": "connected",
+      "resolvedLocation": "Antipolo"
+    },
+    {
+      "name": "Romblon",
+      "reference": "Romblon town",
+      "tempC": 29.4,
+      "condition": "cloudy",
+      "status": "connected",
+      "resolvedLocation": "Romblon"
+    },
+    {
+      "name": "Sorsogon",
+      "reference": "Sorsogon City",
+      "tempC": 29.2,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Balogo"
+    },
+    {
+      "name": "Tarlac",
+      "reference": "Tarlac City",
+      "tempC": 30.6,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Tarlac"
+    },
+    {
+      "name": "Zambales",
+      "reference": "Iba",
+      "tempC": 28.6,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Iba"
+    }
+  ]
+}

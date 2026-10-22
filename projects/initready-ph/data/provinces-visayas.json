@@ -1,0 +1,136 @@
+{
+  "status": "connected",
+  "source": "WeatherAPI.com",
+  "forecastTime": "2026-10-23T06:00:00Z",
+  "fetchedAt": "2026-10-23T01:01:06.326675+08:00",
+  "provinces": [
+    {
+      "name": "Aklan",
+      "reference": "Kalibo",
+      "tempC": 29.7,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Kalibo"
+    },
+    {
+      "name": "Antique",
+      "reference": "San Jose de Buenavista",
+      "tempC": 26.7,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "San Jose"
+    },
+    {
+      "name": "Biliran",
+      "reference": "Naval",
+      "tempC": 28.1,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Naval"
+    },
+    {
+      "name": "Bohol",
+      "reference": "Tagbilaran",
+      "tempC": 28.7,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Tagbilaran"
+    },
+    {
+      "name": "Capiz",
+      "reference": "Roxas City",
+      "tempC": 29.7,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Roxas"
+    },
+    {
+      "name": "Cebu",
+      "reference": "Cebu City",
+      "tempC": 29.5,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Cebu"
+    },
+    {
+      "name": "Eastern Samar",
+      "reference": "Borongan",
+      "tempC": 29.2,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Borongan"
+    },
+    {
+      "name": "Guimaras",
+      "reference": "Jordan",
+      "tempC": 27.5,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Jordan"
+    },
+    {
+      "name": "Iloilo",
+      "reference": "Iloilo City",
+      "tempC": 27.5,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Babuy"
+    },
+    {
+      "name": "Leyte",
+      "reference": "Tacloban",
+      "tempC": 30.0,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Tacloban City"
+    },
+    {
+      "name": "Negros Occidental",
+      "reference": "Bacolod",
+      "tempC": 27.2,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Mandalagan"
+    },
+    {
+      "name": "Negros Oriental",
+      "reference": "Dumaguete",
+      "tempC": 28.3,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Dumaguete"
+    },
+    {
+      "name": "Northern Samar",
+      "reference": "Catarman",
+      "tempC": 30.2,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Catarman"
+    },
+    {
+      "name": "Samar",
+      "reference": "Catbalogan",
+      "tempC": 28.8,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Catbalogan"
+    },
+    {
+      "name": "Siquijor",
+      "reference": "Siquijor town",
+      "tempC": 28.3,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Siquijor"
+    },
+    {
+      "name": "Southern Leyte",
+      "reference": "Maasin",
+      "tempC": 29.2,
+      "condition": "rain",
+      "status": "connected",
+      "resolvedLocation": "Maasin"
+    }
+  ]
+}

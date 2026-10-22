@@ -1,0 +1,87 @@
+# Representative town/city coordinates (WGS84), not province-wide averages.
+# Names: PSA PSGC province directory; coordinates are approximate town centers.
+Luzon:
+Abra|Bangued|17.598|120.616
+Albay|Legazpi|13.139|123.743
+Apayao|Kabugao|18.023|121.185
+Aurora|Baler|15.759|121.562
+Bataan|Balanga|14.676|120.536
+Batanes|Basco|20.449|121.970
+Batangas|Batangas City|13.756|121.058
+Benguet|La Trinidad|16.455|120.590
+Bulacan|Malolos|14.844|120.811
+Cagayan|Tuguegarao|17.614|121.727
+Camarines Norte|Daet|14.112|122.955
+Camarines Sur|Pili|13.584|123.285
+Catanduanes|Virac|13.584|124.237
+Cavite|Trece Martires|14.282|120.867
+Ifugao|Lagawe|16.799|121.119
+Ilocos Norte|Laoag|18.198|120.594
+Ilocos Sur|Vigan|17.574|120.387
+Isabela|Ilagan|17.149|121.889
+Kalinga|Tabuk|17.419|121.444
+La Union|San Fernando|16.615|120.319
+Laguna|Santa Cruz|14.281|121.416
+Marinduque|Boac|13.446|121.840
+Masbate|Masbate City|12.369|123.624
+Mountain Province|Bontoc|17.089|120.978
+Nueva Ecija|Palayan|15.541|121.084
+Nueva Vizcaya|Bayombong|16.481|121.149
+Occidental Mindoro|Mamburao|13.223|120.596
+Oriental Mindoro|Calapan|13.411|121.180
+Palawan|Puerto Princesa|9.740|118.735
+Pampanga|San Fernando|15.035|120.685
+Pangasinan|Lingayen|16.021|120.230
+Quezon|Lucena|13.938|121.617
+Quirino|Cabarroguis|16.511|121.522
+Rizal|Antipolo|14.586|121.176
+Romblon|Romblon town|12.576|122.270
+Sorsogon|Sorsogon City|12.974|124.006
+Tarlac|Tarlac City|15.486|120.589
+Zambales|Iba|15.327|119.978
+Visayas:
+Aklan|Kalibo|11.707|122.364
+Antique|San Jose de Buenavista|10.743|121.942
+Biliran|Naval|11.561|124.396
+Bohol|Tagbilaran|9.650|123.855
+Capiz|Roxas City|11.585|122.751
+Cebu|Cebu City|10.316|123.885
+Eastern Samar|Borongan|11.608|125.432
+Guimaras|Jordan|10.659|122.596
+Iloilo|Iloilo City|10.721|122.562
+Leyte|Tacloban|11.244|125.004
+Negros Occidental|Bacolod|10.677|122.950
+Negros Oriental|Dumaguete|9.307|123.306
+Northern Samar|Catarman|12.498|124.637
+Samar|Catbalogan|11.775|124.886
+Siquijor|Siquijor town|9.214|123.515
+Southern Leyte|Maasin|10.133|124.844
+Mindanao:
+Agusan del Norte|Cabadbaran|9.123|125.535
+Agusan del Sur|Prosperidad|8.605|125.916
+Basilan|Lamitan|6.650|122.135
+Bukidnon|Malaybalay|8.157|125.127
+Camiguin|Mambajao|9.250|124.715
+Cotabato|Kidapawan|7.010|125.091
+Davao de Oro|Nabunturan|7.603|125.967
+Davao del Norte|Tagum|7.448|125.808
+Davao del Sur|Digos|6.749|125.357
+Davao Occidental|Malita|6.414|125.611
+Davao Oriental|Mati|6.955|126.216
+Dinagat Islands|San Jose|10.009|125.570
+Lanao del Norte|Tubod|8.055|123.791
+Lanao del Sur|Marawi|8.002|124.285
+Maguindanao del Norte|Datu Odin Sinsuat|7.189|124.184
+Maguindanao del Sur|Buluan|6.834|124.834
+Misamis Occidental|Oroquieta|8.485|123.805
+Misamis Oriental|Cagayan de Oro|8.454|124.632
+Sarangani|Alabel|6.101|125.290
+South Cotabato|Koronadal|6.501|124.846
+Sultan Kudarat|Isulan|6.633|124.601
+Sulu|Jolo|6.052|121.002
+Surigao del Norte|Surigao City|9.786|125.492
+Surigao del Sur|Tandag|9.078|126.198
+Tawi-Tawi|Bongao|5.029|119.773
+Zamboanga del Norte|Dipolog|8.589|123.341
+Zamboanga del Sur|Pagadian|7.825|123.437
+Zamboanga Sibugay|Ipil|7.784|122.587

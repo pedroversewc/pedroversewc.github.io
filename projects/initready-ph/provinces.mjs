@@ -1,0 +1,7 @@
+// Province names checked against PSA PSGC, 2026-10-23.
+// https://psa.gov.ph/classification/psgc/provinces?vcode=82
+export const PROVINCES={
+Luzon:'Abra|Albay|Apayao|Aurora|Bataan|Batanes|Batangas|Benguet|Bulacan|Cagayan|Camarines Norte|Camarines Sur|Catanduanes|Cavite|Ifugao|Ilocos Norte|Ilocos Sur|Isabela|Kalinga|La Union|Laguna|Marinduque|Masbate|Mountain Province|Nueva Ecija|Nueva Vizcaya|Occidental Mindoro|Oriental Mindoro|Palawan|Pampanga|Pangasinan|Quezon|Quirino|Rizal|Romblon|Sorsogon|Tarlac|Zambales'.split('|'),
+Visayas:'Aklan|Antique|Biliran|Bohol|Capiz|Cebu|Eastern Samar|Guimaras|Iloilo|Leyte|Negros Occidental|Negros Oriental|Northern Samar|Samar|Siquijor|Southern Leyte'.split('|'),
+Mindanao:'Agusan del Norte|Agusan del Sur|Basilan|Bukidnon|Camiguin|Cotabato|Davao de Oro|Davao del Norte|Davao del Sur|Davao Occidental|Davao Oriental|Dinagat Islands|Lanao del Norte|Lanao del Sur|Maguindanao del Norte|Maguindanao del Sur|Misamis Occidental|Misamis Oriental|Sarangani|South Cotabato|Sultan Kudarat|Sulu|Surigao del Norte|Surigao del Sur|Tawi-Tawi|Zamboanga del Norte|Zamboanga del Sur|Zamboanga Sibugay'.split('|')};
+export function provinceRows(region,query='',sample=false){return (PROVINCES[region]||[]).filter(name=>name.toLocaleLowerCase().includes(query.trim().toLocaleLowerCase())).map(name=>({name,tempC:sample?27+[...name].reduce((n,c)=>n+c.charCodeAt(0),0)%7:null}));}
