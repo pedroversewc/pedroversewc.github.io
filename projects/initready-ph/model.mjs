@@ -32,4 +32,3 @@ export function statusAtUse(data,now=new Date()){
  return data;
 }
 export function outputLabel(data){const s=statusAtUse(data).status;return s==='sample'?'SAMPLE DATA • NOT A FORECAST':s==='connected'?'WeatherAPI.com • 2 PM forecast':s==='stale'?'STALE FORECAST • CHECK BEFORE SHARING':'NO FORECAST DATA • PREVIEW ONLY';}
-

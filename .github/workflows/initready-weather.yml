@@ -1,5 +1,10 @@
 name: Refresh InitReady PH weather
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'projects/initready-ph/**'
+      - '.github/workflows/initready-weather.yml'
   schedule:
     - cron: '12 * * * *'
   workflow_dispatch:

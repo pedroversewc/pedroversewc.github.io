@@ -15,4 +15,3 @@ export function setupProvincePanel(){
  document.getElementById('weather').addEventListener('keydown',event=>{if((event.key==='Enter'||event.key===' ')&&event.target.matches('[data-island]')){event.preventDefault();event.target.click();}});
  return ()=>{};
 }
-

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+:root{background:#132b49;color:#edf4ff}
+body{background:linear-gradient(#112943ef,#142e4cf5),url('assets/islands-panorama.png') center/cover fixed;min-height:100svh}
+a{color:#ffe0a0}.reporter-home{display:inline-flex;align-items:center;gap:10px}.reporter-home img{border-radius:8px}
+.eyebrow{color:#f4d58d}h1 em{color:#ffd083}.intro>p:last-child{color:#c5d9e8}
+.stage{isolation:isolate;border-color:#9bbdd3;background:#458fd0;box-shadow:0 16px 40px #06182c55}
+.stage::before{background:url('assets/islands-panorama.png') 18% bottom/auto 100% no-repeat;opacity:1;z-index:-2;animation:reporter-float 18s ease-in-out infinite}
+.stage[data-region=Visayas]::before{background-position:50% bottom}.stage[data-region=Mindanao]::before{background-position:86% bottom}
+.stage-top{background:#112a49d9;padding:10px;border-radius:8px;inset:16px 16px auto;color:#fff1cb}
+.stage-caption{background:#112a49eb;border-color:#d9c38b}.stage-caption div>span{color:#c4d9ea}
+.stage[data-period=night]::before{filter:brightness(.35)}.stage[data-period=sunset]::before,.stage[data-period=sunrise]::before{filter:sepia(.25) brightness(.8)}
+.stage[data-weather=cloudy]::before{filter:brightness(.7) saturate(.8)}.stage[data-weather=rain]::before{filter:brightness(.5) saturate(.7)}
+.stage[data-period=night][data-weather]::before{filter:brightness(.3)}
+.stage[data-weather=rain]::after{content:'';position:absolute;inset:0;z-index:-1;background:repeating-linear-gradient(110deg,transparent 0 35px,#d5efff66 36px 37px,transparent 38px 80px);background-size:130px 140px;animation:reporter-rain 1.2s linear infinite;pointer-events:none}
+.report-island-art{background-image:url('assets/islands-panorama.png');background-size:300% auto;background-position:0 70%}
+[data-report-region=Visayas] .report-island-art{background-position:50% 70%}
+[data-report-region=Mindanao] .report-island-art{background-position:100% 70%}
+.report-island-art svg{visibility:hidden}
+.report-islands article{background:#172f4c;border-color:#50708b}.report-islands .report-active{background:#f1d497;color:#142d46;border-color:#fff0bf}
+.screen{border-color:#8da6b7;background:#173b59}.notice{background:#28394a;border-color:#b69e67;color:#ffe0a0}
+@keyframes reporter-float{50%{transform:scale(1.025) translateY(-3px)}}
+@keyframes reporter-rain{to{background-position:-65px 140px}}
+@media(prefers-reduced-motion:reduce){.stage::before,.stage::after{animation:none}}

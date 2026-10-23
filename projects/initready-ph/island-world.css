@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/* Full-height island windows retain the shared weather and province interactions. */
+:root .world{min-height:740px;height:100svh;background:#1c385b}
+.world>.landscape,.world>.weather-effect{display:none}
+.topbar{top:22px;pointer-events:none}.topbar>a,.topbar>button{pointer-events:auto}
+.world-label{color:#fff5df;text-shadow:0 2px 4px #10263c}
+.identity{padding-top:112px;pointer-events:none;text-shadow:0 2px 6px #14233f}
+.identity::before{display:none}.identity .eyebrow{background:#142844bb;font-size:9px}
+.identity h1{font-size:clamp(48px,6vw,88px);margin:14px auto 10px}
+.identity .tagline{font-size:12px;letter-spacing:.5px;color:#fff5df}
+.date-line{margin:14px auto;pointer-events:none}.date-line time{background:#182a46bb;padding:8px 15px;border-radius:20px}
+:root .weather{position:absolute;inset:0;display:block;z-index:0}
+:root .weather-card{position:absolute;inset:0;border:0;border-radius:0;padding:0;background:#233952;box-shadow:none;backdrop-filter:none;transition:filter .25s;overflow:hidden;transform:none!important}
+:root .weather-card:nth-child(1){clip-path:polygon(0 0,40% 0,29% 100%,0 100%)}
+:root .weather-card:nth-child(2){clip-path:polygon(40.2% 0,73% 0,62% 100%,29.2% 100%)}
+:root .weather-card:nth-child(3){clip-path:polygon(73.2% 0,100% 0,100% 100%,62.2% 100%)}
+.weather-card:hover{filter:brightness(1.08)}.weather-card:focus-visible{outline:0;box-shadow:inset 0 0 0 8px #ffdc85!important}
+.weather-card .card-scene{position:absolute;inset:0;height:100%;width:100%;border:0;background:#30596f;pointer-events:none}
+.weather-card .card-scene svg{position:absolute;width:44%;height:100%;bottom:0;filter:none;transition:filter 2s}
+.weather-card:nth-child(1) .card-scene svg{left:-3%}.weather-card:nth-child(2) .card-scene svg{left:28%}.weather-card:nth-child(3) .card-scene svg{left:60%}
+.weather-card .card-scene::before{content:'';position:absolute;inset:0;background:linear-gradient(#17234455,transparent 38%,transparent 58%,#0a1c37d9);z-index:1}
+:root .weather-card .card-title,:root .weather-card .card-title+div,.scene-reference,:root .weather-card .weather-note{position:absolute;left:7%;width:22%;padding:0;margin:0;z-index:2;pointer-events:none}
+:root .weather-card:nth-child(2)>:not(.card-scene){left:39%}
+:root .weather-card:nth-child(3)>:not(.card-scene){left:72%}
+:root .weather-card .card-title{bottom:31%;display:block}.card-title h2{font-family:Georgia,serif;font-size:clamp(27px,3.2vw,48px);letter-spacing:-1px;text-shadow:0 3px 5px #13253c;margin-bottom:8px}.region-index{font-size:10px;color:#ffdf91}
+:root .weather-card .card-title+div{bottom:22%;background:#12263dcc;border:1px solid #d9ddce44;border-radius:12px;padding:12px 15px;max-width:280px}
+.weather-card .city{color:#fff5df;font-size:13px}.weather-card .city strong{color:#ffe1a0}
+:root .weather-card .weather-note{bottom:18%;font-size:9px;line-height:1.6;color:#ffe4a1;letter-spacing:.5px}
+.scene-reference{bottom:15%;font-size:9px;color:#d9e8ee;line-height:1.5}
+.bottom{z-index:2;pointer-events:none;font-size:9px}.bottom a,.bottom button{pointer-events:auto}.status{max-width:45%;padding:8px 12px;background:#10243bbb;border-radius:8px}.credit{font-size:8px;padding:6px;background:#10243b99;border-radius:8px}.social-links{margin-top:0}.social-links a{background:#142943cc}
+.island-sun,.island-moon,.island-stars{display:none}
+.island-sun,.island-moon{transform:translateX(-145px)}
+[data-period=day] .island-sun,[data-period=sunrise] .island-sun,[data-period=sunset] .island-sun,[data-period=night] .island-moon,[data-period=night] .island-stars{display:block}
+[data-period=day] .weather-card .card-scene svg>rect:first-child{fill:#75b8e7}
+[data-period=sunrise] .weather-card .card-scene svg>rect:first-child{fill:#d9a1a0}
+[data-period=sunset] .weather-card .card-scene svg>rect:first-child{fill:#b37689}
+[data-period=night] .weather-card .card-scene svg>rect:first-child{fill:#18243f}
+[data-period=sunrise] .island-sun,[data-period=sunset] .island-sun{transform:translate(-145px,145px)}
+[data-period=day] .weather-card .card-scene svg{filter:brightness(1.12) saturate(1.25)}
+[data-period=night] .weather-card .card-scene svg{filter:brightness(.8)}
+.weather-card .card-scene::after{z-index:1;pointer-events:none}
+.weather-card[data-weather=rain] .card-scene svg{filter:brightness(.78) saturate(.75)}
+.weather-card[data-weather=rain] .island-sun,.weather-card[data-weather=cloudy] .island-sun{opacity:.25}
+.weather-card[data-weather=cloudy] .island-clouds,.weather-card[data-weather=rain] .island-clouds{opacity:1}
+.island-clouds{animation:island-cloud-drift 24s ease-in-out infinite alternate;opacity:.65}
+@keyframes island-cloud-drift{to{transform:translateX(34px)}}
+@media(max-width:900px){
+ :root .world{height:auto;min-height:100svh;padding-bottom:0}
+ .topbar{top:16px;font-size:8px;left:5%;right:5%}.world-label{max-width:100px;line-height:1.6}.connection{max-width:125px;font-size:8px}
+ .identity{position:absolute;top:0;left:0;width:100%;padding:100px 15px 0}.identity h1{font-size:49px;letter-spacing:-2px}.identity .eyebrow{font-size:7px;letter-spacing:1px}.identity .tagline{font-size:10px;line-height:1.7;max-width:280px;margin:auto}.date-line{margin-top:12px}
+ :root .weather{position:relative;inset:auto;display:block}
+ :root .weather-card{position:relative;inset:auto;width:100%;height:550px;clip-path:none!important;border-bottom:2px solid #ffe0a466}
+ :root .weather-card:first-child{height:880px}
+ .weather-card .card-scene svg{width:100%;height:100%;left:0!important}
+ :root .weather-card .card-title,:root .weather-card .card-title+div,:root .weather-card .weather-note,.scene-reference{left:7%!important;width:86%;max-width:none}
+ :root .weather-card .card-title{bottom:190px}.card-title h2{font-size:36px}
+ :root .weather-card .card-title+div{bottom:100px;display:block}
+ :root .weather-card .weather-note{bottom:65px}.scene-reference{bottom:42px}
+ .bottom{position:relative;inset:auto;padding:20px 6%;background:#10233b;gap:12px}.status{max-width:100%;padding:0}.credit{background:none;padding:0}.social-links{justify-content:flex-start;flex-wrap:wrap;margin:0}
+}
+@media(prefers-reduced-motion:reduce){.island-clouds{animation:none}.weather-card{transition:none}}
+.weather-card:focus-visible .card-title h2{outline:3px solid #ffdc85;outline-offset:8px;border-radius:4px}
+.scene-panorama{position:absolute;inset:0;background:#4398ed url('assets/islands-panorama.png') center bottom/100% 100% no-repeat;transition:filter 2s}
+.weather-card .card-scene svg>:not(.island-sun):not(.island-moon):not(.island-stars){display:none}
+.weather-card .card-scene svg{filter:none!important;pointer-events:none}
+.weather-card .card-scene::before{background:linear-gradient(#163c6633,transparent 40%,transparent 65%,#0a1c37c9)}
+[data-period=sunrise] .scene-panorama{filter:sepia(.3) saturate(.85) hue-rotate(335deg) brightness(.86)}
+[data-period=sunset] .scene-panorama{filter:sepia(.4) saturate(.9) hue-rotate(325deg) brightness(.7)}
+[data-period=night] .scene-panorama{filter:brightness(.3) saturate(.65)}
+.weather-card[data-weather=cloudy] .scene-panorama{filter:brightness(.78) saturate(.75)}
+.weather-card[data-weather=rain] .scene-panorama{filter:brightness(.58) saturate(.65)}
+[data-period=night] .weather-card[data-weather=cloudy] .scene-panorama,[data-period=night] .weather-card[data-weather=rain] .scene-panorama{filter:brightness(.25) saturate(.6)}
+.sky-motion{position:absolute;left:4%;top:12%;width:90px;height:9px;background:#ffffff44;box-shadow:15px -9px #ffffff44,30px -18px #ffffff44,45px -9px #ffffff44,60px 0 #ffffff44;animation:panorama-cloud 32s ease-in-out infinite alternate;pointer-events:none}
+.weather-card:nth-child(2) .sky-motion{left:44%;top:16%;animation-delay:-12s}
+.weather-card:nth-child(3) .sky-motion{left:78%;top:8%;animation-delay:-22s}
+.water-motion{position:absolute;inset:76% 0 0;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0 16px,#d9ffff66 16px 18px,transparent 18px 31px);mask-image:repeating-linear-gradient(90deg,transparent 0 42px,#000 42px 66px,transparent 66px 138px);opacity:.16;animation:panorama-water 6s ease-in-out infinite alternate}
+.weather-card:nth-child(2) .water-motion{animation-delay:-2s}.weather-card:nth-child(3) .water-motion{animation-delay:-4s}
+[data-period=night] .sky-motion,[data-period=night] .water-motion{opacity:.12}
+@keyframes panorama-cloud{to{transform:translateX(70px)}}
+@keyframes panorama-water{to{transform:translate(13px,-3px);opacity:.35}}
+@media(max-width:900px){
+ .scene-panorama{background-size:auto 100%;background-position:18% bottom}
+ .weather-card:nth-child(2) .scene-panorama{background-position:50% bottom}
+ .weather-card:nth-child(3) .scene-panorama{background-position:86% bottom}
+ .weather-card .sky-motion{left:15%;top:12%}.weather-card:first-child .sky-motion{top:37%}
+}
+@media(prefers-reduced-motion:reduce){.sky-motion,.water-motion{animation:none}.scene-panorama{transition:none}}
+/* Overscan keeps the frame filled during the slow floating motion. */
+.scene-panorama{inset:-12px;animation:island-hover 16s ease-in-out infinite;will-change:transform}
+.weather-card:nth-child(2) .scene-panorama{animation-duration:19s;animation-delay:-6s}
+.weather-card:nth-child(3) .scene-panorama{animation-duration:22s;animation-delay:-11s}
+@keyframes island-hover{0%,100%{transform:translate(0,5px) scale(1.012)}50%{transform:translate(3px,-5px) scale(1.02)}}
+@media(prefers-reduced-motion:reduce){.scene-panorama{animation:none;will-change:auto;transform:none}}
+.scene-panorama{background:none}
+.scene-art{position:absolute;inset:0;width:100%;height:100%}
+.scene-art img{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.object-jeepney{clip-path:polygon(12% 63%,25% 63%,25% 82%,12% 82%);animation:jeepney-cruise 12s ease-in-out infinite alternate}
+.object-boat{clip-path:polygon(36% 79%,50% 79%,50% 95%,36% 95%);animation:banca-bob 6s ease-in-out infinite;transform-origin:43% 88%}
+.object-house{clip-path:polygon(49% 63%,59% 63%,59% 82%,49% 82%);animation:house-hover 9s ease-in-out infinite}
+@keyframes jeepney-cruise{from{transform:translateX(-8px)}to{transform:translateX(18px)}}
+@keyframes banca-bob{0%,100%{transform:translate(-3px,1px) rotate(-.5deg)}50%{transform:translate(4px,-4px) rotate(.5deg)}}
+@keyframes house-hover{0%,100%{transform:translateY(1px)}50%{transform:translateY(-4px)}}
+.island-sun path{animation:sun-glow 5s ease-in-out infinite alternate}
+.island-moon path{animation:moon-glow 9s ease-in-out infinite alternate}
+@keyframes sun-glow{to{filter:drop-shadow(0 0 8px #ffe8a8);opacity:.85}}
+@keyframes moon-glow{to{filter:drop-shadow(0 0 5px #d4eaff);opacity:.8}}
+.weather-card[data-weather=cloudy] .sky-motion,.weather-card[data-weather=rain] .sky-motion{width:120px;height:16px;background:#647b98cc;box-shadow:20px -12px #647b98cc,40px -24px #647b98cc,60px -12px #647b98cc,80px 0 #647b98cc;opacity:.9}
+.weather-card[data-weather=rain] .island-sun,.weather-card[data-weather=rain] .island-moon,.weather-card[data-weather=rain] .island-stars{opacity:.1}
+.weather-card[data-weather=cloudy] .island-moon{opacity:.4}
+@media(max-width:900px){
+ .scene-art{inset:0 auto 0 18%;width:auto;height:100%;aspect-ratio:2057/764;transform:translateX(-18%)}
+ .weather-card:nth-child(2) .scene-art{left:50%;transform:translateX(-50%)}
+ .weather-card:nth-child(3) .scene-art{left:86%;transform:translateX(-86%)}
+}
+@media(prefers-reduced-motion:reduce){.scene-art img,.island-sun path,.island-moon path{animation:none}}
+.identity .brand-logo{display:block;width:76px;height:76px;object-fit:cover;border:1px solid #ffdc8588;border-radius:18px;margin:14px auto 0;box-shadow:0 5px 15px #10243b44}@media(max-width:900px){.identity .brand-logo{width:64px;height:64px;border-radius:15px;margin-top:12px}}
