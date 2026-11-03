@@ -26,9 +26,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Refresh forecasts without exposing credentials
-        env:
-          WEATHERAPI_KEY: ${{ secrets.WEATHERAPI_KEY }}
+      - name: Refresh forecasts from Open-Meteo
         run: python .github/scripts/initready-weather/export_forecasts.py projects/initready-ph/data
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

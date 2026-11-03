@@ -20,15 +20,18 @@ export function normalize(payload){
   if(!CITIES.some(x=>x.id===c.id))throw Error('Unknown city.');
   if(c.tempC!==null&&(typeof c.tempC!=='number'||!Number.isFinite(c.tempC)||c.tempC < -40||c.tempC>65))throw Error('Invalid temperature.');
  }
- return {...payload,cities:CITIES.map(city=>({...city,tempC:entries.find(x=>x.id===city.id)?.tempC??null,condition:entries.find(x=>x.id===city.id)?.condition??'unknown'}))};
+ return {...payload,cities:CITIES.map(city=>({...city,tempC:entries.find(x=>x.id===city.id)?.tempC??null,condition:entries.find(x=>x.id===city.id)?.condition??'unknown',rainChance:entries.find(x=>x.id===city.id)?.rainChance??null,now:validNow(entries.find(x=>x.id===city.id)?.now)}))};
+}
+function validNow(now){
+ return now&&typeof now.tempC==='number'&&Number.isFinite(now.tempC)&&now.tempC>=-40&&now.tempC<=65?{tempC:now.tempC,condition:now.condition??'unknown'}:null;
 }
 export const selectCities=(data,region='all')=>data.cities.filter(c=>region==='all'||c.region===region);
 export function sampleData(day){
  return normalize({status:'sample',source:'Illustrative sample — not a forecast',forecastTime:forecastTime(day),initializedAt:null,fetchedAt:null,cities:CITIES.map((c,i)=>({id:c.id,tempC:[31,32,30,31,30,32][i]}))});
 }
-export const emptyData=()=>normalize({status:'not_connected',source:'WeatherAPI.com connection pending',cities:[]});
+export const emptyData=()=>normalize({status:'not_connected',source:'Open-Meteo.com connection pending',cities:[]});
 export function statusAtUse(data,now=new Date()){
  if(data.status==='connected'&&(!Number.isFinite(Date.parse(data.initializedAt))||now-Date.parse(data.initializedAt)>12*3600000))return {...data,status:'stale'};
  return data;
 }
-export function outputLabel(data){const s=statusAtUse(data).status;return s==='sample'?'SAMPLE DATA • NOT A FORECAST':s==='connected'?'WeatherAPI.com • 2 PM forecast':s==='stale'?'STALE FORECAST • CHECK BEFORE SHARING':'NO FORECAST DATA • PREVIEW ONLY';}
+export function outputLabel(data){const s=statusAtUse(data).status;return s==='sample'?'SAMPLE DATA • NOT A FORECAST':s==='connected'?'Open-Meteo.com • 2 PM forecast':s==='stale'?'STALE FORECAST • CHECK BEFORE SHARING':'NO FORECAST DATA • PREVIEW ONLY';}

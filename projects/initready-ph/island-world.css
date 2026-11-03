@@ -24,7 +24,7 @@
 :root .weather-card:nth-child(3)>:not(.card-scene){left:72%}
 :root .weather-card .card-title{bottom:31%;display:block}.card-title h2{font-family:Georgia,serif;font-size:clamp(27px,3.2vw,48px);letter-spacing:-1px;text-shadow:0 3px 5px #13253c;margin-bottom:8px}.region-index{font-size:10px;color:#ffdf91}
 :root .weather-card .card-title+div{bottom:22%;background:#12263dcc;border:1px solid #d9ddce44;border-radius:12px;padding:12px 15px;max-width:280px}
-.weather-card .city{color:#fff5df;font-size:13px}.weather-card .city strong{color:#ffe1a0}
+.weather-card .city{color:#fff5df;font-size:13px}.weather-card .city strong{color:#ffe1a0}.weather-card .city-now{margin-left:auto;font-size:10px;color:#cfe3f0;opacity:.85;white-space:nowrap}
 :root .weather-card .weather-note{bottom:18%;font-size:9px;line-height:1.6;color:#ffe4a1;letter-spacing:.5px}
 .scene-reference{bottom:15%;font-size:9px;color:#d9e8ee;line-height:1.5}
 .bottom{z-index:2;pointer-events:none;font-size:9px}.bottom a,.bottom button{pointer-events:auto}.status{max-width:45%;padding:8px 12px;background:#10243bbb;border-radius:8px}.credit{font-size:8px;padding:6px;background:#10243b99;border-radius:8px}.social-links{margin-top:0}.social-links a{background:#142943cc}
